@@ -1,10 +1,10 @@
 
 # Minecraft-prezentacje
 
-Strona www historycznego projektu edukacyjnego prowadzonego przez moich kolegów. Stworzona przy użyciu Angulara. Zawiera sekcje
-- O nas
+Website of a historical educational project conducted by my colleagues. Created using Angular. Contains sections
+- About us
 - Social Media
-- Materiały
+- Materials
 
 ## Live
 
