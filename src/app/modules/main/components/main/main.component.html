@@ -1,0 +1,43 @@
+<header class="header-hero">
+  <div
+    class="header-hero__img"
+    style="background-image: url('assets/img/header.jpg')"
+  >
+    <div class="header-hero__bg"></div>
+    <div class="header-hero__text">
+      <h1 class="header-hero__text-header">Minecraft-Prezentacje</h1>
+
+      <button class="header-hero__text-button" [routerLink]="['/social-media']">
+        Social Media
+      </button>
+    </div>
+  </div>
+</header>
+<main class="main">
+  <section class="about-us">
+    <h3 class="about-us__title">Nietypowy projekt</h3>
+    <div class="wrapper">
+      <div class="about-us__box">
+        <img
+          class="about-us__img"
+          src="assets/img/mplogo.webp"
+          alt="logo MC prezentacje"
+        />
+        <div class="about-us__text">
+          <p class="about-us__text-p">
+            Jesteśmy grupą przyjaciół, która postanowiła dotrzeć do młodzieży w
+            dość nietuzinkowy sposób. Chcemy, aby dostarczanie wiedzy nabrało
+            trochę innego znaczenia. Nasza misja to nie tylko przekazywanie
+            suchych faktów, ale także tworzenie interaktywnych i angażujących
+            doświadczeń edukacyjnych.Wierzymy, że każdy może odkryć pasję do
+            nauki, wystarczy tylko podejść do niej z ciekawością i otwartym
+            umysłem.
+          </p>
+        </div>
+      </div>
+      <button class="about-us__text-button" [routerLink]="['/o-nas']">
+        Zobacz wszystko
+      </button>
+    </div>
+  </section>
+</main>

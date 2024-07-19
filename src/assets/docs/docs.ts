@@ -1,0 +1,96 @@
+import { Materials, TeamData } from 'src/app/modules/core/models/main.models';
+
+export const teamData: TeamData[] = [
+  {
+    id: 1,
+    title: 'Grzesiu',
+    text: 'Drugi pomysłodawca, montażysta, aktor (mat-inf)',
+    src: 'assets/img/grzesiu.webp',
+    fb: 'lorem ipsum',
+    ig: 'lorem ipsum',
+  },
+  {
+    id: 2,
+    title: 'KHS',
+    text: 'Jeden z najwybitniejszych aktorów, najstarszy z nas, świetny humanista. (maturzysta)',
+    src: 'assets/img/khs.webp',
+    fb: 'lorem ipsum',
+    ig: 'lorem ipsum',
+  },
+  {
+    id: 3,
+    title: 'Dominik',
+    text: 'Jeden z pierwszych członków, aktor, myślę, że można zapisać pod pomysłodawcę (mat-inf)',
+    src: 'assets/img/dominik.webp',
+    fb: 'lorem ipsum',
+    ig: 'lorem ipsum',
+  },
+  {
+    id: 4,
+    title: 'Janek',
+    text: 'Aktor, uczestnik projektu podtrzymujący mental innych uczestników (mat-inf)',
+    src: 'assets/img/janek.webp',
+    fb: 'lorem ipsum',
+    ig: 'lorem ipsum',
+  },
+  {
+    id: 5,
+    title: 'Strona',
+    text: 'Niecodzienny aktor, wielbiciel Janka. (mat-inf)',
+    src: 'assets/img/strona.webp',
+    fb: 'lorem ipsum',
+    ig: 'lorem ipsum',
+  },
+  {
+    id: 6,
+    title: 'Zefir',
+    text: 'Aktor, jeden z pierwszych członków, świetny przyjaciel. (mat-biol)',
+    src: 'assets/img/zefir.webp',
+    fb: 'lorem ipsum',
+    ig: 'lorem ipsum',
+  },
+  {
+    id: 7,
+    title: 'Michał',
+    text: 'Aktor, mieszkaniec Łodzi, świetny towarzysz. (Technik informatyk)',
+    src: 'assets/img/michal.png',
+    fb: 'lorem ipsum',
+    ig: 'lorem ipsum',
+  },
+  {
+    id: 8,
+    title: 'BETA',
+    text: 'Aktor, największy fan piłki nożnej. (mat-inf)',
+    src: 'assets/img/beta.webp',
+    fb: 'lorem ipsum',
+    ig: 'lorem ipsum',
+  },
+  {
+    id: 9,
+    title: 'Vimw',
+    text: 'Aktor, osoba, która najpóźniej (jak na razie) dołączyła do naszego projektu.',
+    src: 'assets/img/vimw.webp',
+    fb: 'lorem ipsum',
+    ig: 'lorem ipsum',
+  },
+  {
+    id: 10,
+    title: 'Birtiks',
+    text: 'Aktor, najnowszy członek naszej ekipy! (mat-inf)',
+    src: 'assets/img/bartek.webp',
+    fb: 'lorem ipsum',
+    ig: 'lorem ipsum',
+  },
+];
+
+export const materials: Materials[] = [
+  {
+    id: 1,
+    title: 'Mit o Dedalu i Ikarze',
+    text: 'Cześć wszystkim! Tym razem zaczynamy pracę! Naszym pierwszym materiałem będzie "Mit o Dedalu i Ikarze" oparty na książce Jana Parandowskiego. Bardzo się staraliśmy, aby wszystko wyszło jak najlepiej. Mamy nadzieję, że Wam się spodoba.',
+    imgisrc: 'assets/img/Dedal_i_Ikar.jpg',
+    ytsrc: 'https://www.youtube.com/watch?v=Y3suX0sywgU',
+    materialsrc: '',
+    mysterysrc: 'https://www.youtube.com/watch?v=uZrQvd2NcO4',
+  },
+];

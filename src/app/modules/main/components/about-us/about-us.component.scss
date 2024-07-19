@@ -1,0 +1,308 @@
+.about-us {
+  overflow: hidden;
+  &__button {
+    margin-top: 2em;
+    padding: 0.7em 2.5em;
+    font-family: "Pixelify Sans", sans-serif;
+    background-color: #dbaf40;
+    color: #131523;
+    font-size: 1.6rem;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: #131523;
+      color: #fff;
+    }
+  }
+  &-first {
+    background-color: #fff;
+    padding-bottom: 5em;
+    &__title {
+      padding-top: 5em;
+      position: relative;
+      font-size: 3.5rem;
+      color: #131523;
+      text-transform: uppercase;
+      font-weight: normal;
+      text-align: center;
+    }
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__card {
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &-title {
+        position: relative;
+        padding-top: 2em;
+        font-size: 2.8rem;
+        color: #131523;
+        text-transform: uppercase;
+        font-weight: normal;
+        text-align: center;
+      }
+      &-text {
+        position: relative;
+        padding: 1em;
+        margin: 2em;
+        width: 95%;
+        max-width: 35rem;
+        font-size: 1.8rem;
+        color: #131523;
+      }
+      &-img {
+        margin: 1em;
+        margin-top: 0;
+        width: 95%;
+        max-width: 35rem;
+      }
+    }
+  }
+  &-second {
+    background-color: #f9f9f9;
+    padding-bottom: 5em;
+    &__title {
+      position: relative;
+      padding: 3em 0.5em 2em;
+      font-size: 3.5rem;
+      color: #131523;
+      text-transform: uppercase;
+      font-weight: normal;
+      text-align: center;
+    }
+    &__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__card {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      width: 95%;
+      max-width: 35rem;
+
+      &-title {
+        position: relative;
+        padding: 2em 1em 2em;
+        font-size: 3.5rem;
+        color: #131523;
+        text-transform: uppercase;
+        font-weight: normal;
+        text-align: center;
+      }
+      &-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      &-img {
+        width: 10rem;
+        transition: width 0.3s;
+        &:hover {
+          transform: scale(1.01);
+        }
+
+        &-title {
+          display: none;
+          // padding-top: 0.5em;
+          // font-size: 3rem;
+          // text-align: center;
+        }
+        &-text {
+          display: none;
+          // font-size: 2rem;
+          // text-align: center;
+        }
+        &-main {
+          width: 95%;
+          max-width: 35rem;
+
+          &-title {
+            padding-top: 0.5em;
+            font-size: 2.8rem;
+            text-align: center;
+          }
+          &-text {
+            font-size: 2rem;
+            text-align: center;
+          }
+          &-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+            max-width: 35rem;
+          }
+        }
+        &-box {
+          margin: 3em 2em 3em;
+          border: none;
+          background: none;
+          cursor: pointer;
+          &:first-child {
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+  &-third {
+    padding-bottom: 5em;
+    background-color: #fff;
+    &__title {
+      padding-top: 2em;
+      margin-bottom: 2em;
+      font-size: 3rem;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &__img {
+      display: block;
+      margin: 0 0 2em;
+      width: 95%;
+      max-width: 35rem;
+    }
+    &__text {
+      position: relative;
+      display: block;
+      padding: 1em;
+      max-width: 38rem;
+      &-p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    &-first {
+      &__box {
+        justify-content: space-evenly;
+      }
+      &__card {
+        flex-direction: row;
+        // &:last-child{
+        //   flex-direction: row-reverse;
+        // }
+        &-title {
+          padding-top: 0;
+        }
+        &-img {
+          margin: 0;
+          width: 20rem;
+        }
+        &-text {
+          margin: 1.5em;
+          margin-right: 0;
+        }
+      }
+    }
+    &-second {
+      // &__box {
+      //   // flex-direction: row;
+      // }
+      &__card {
+        &-title {
+          display: none;
+        }
+      }
+    }
+    &-third {
+      padding-bottom: 10em;
+      &__text {
+        &-p {
+          font-size: 1.8rem;
+        }
+        &-title {
+          font-size: 3.5rem;
+        }
+      }
+      &__box {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      &__img {
+        margin-bottom: 0;
+        margin-right: 4em;
+      }
+      &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .about-us {
+    &-first {
+      padding-bottom: 10em;
+      &__title {
+        font-size: 4.5rem;
+      }
+      &__box {
+        justify-content: space-evenly;
+      }
+      &__card {
+        &-title {
+          font-size: 3.5rem;
+        }
+        &-text {
+          font-size: 2rem;
+          max-width: 45rem;
+        }
+        &-img {
+          margin: 0;
+          width: 35rem;
+        }
+        &-text {
+          margin: 1.5em;
+          margin-right: 0;
+        }
+      }
+    }
+    &-second {
+      padding-bottom: 10em;
+      &__title {
+        font-size: 4.5rem;
+      }
+      &__card {
+        max-width: 50rem;
+      }
+    }
+    &-third {
+      padding-bottom: 10em;
+      &__title {
+        font-size: 4.5rem;
+      }
+      &__text {
+        &-p {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  .extra-margin {
+    margin-left: 5em;
+  }
+}

@@ -1,0 +1,57 @@
+<nav class="nav">
+  <div class="wrapper">
+    <button class="nav__menu" (click)="activeNavLinks()">
+      <img src="assets/img/icons/menu.svg" class="nav__menu-img" />
+    </button>
+    <button routerLink="/" class="nav__menu-left">
+      <img src="assets/img/mplogo.webp" class="nav__menu-img" />
+    </button>
+  </div>
+  <div class="nav__links-box" [ngClass]="animationSlide">
+    <div class="wrapper">
+      <div class="nav__links">
+        <button
+          *ngIf="activeNav"
+          class="nav__menu-close"
+          (click)="hideNavLinks()"
+        >
+          <img
+            src="assets/img/icons/x.svg"
+            alt="przycisk zamykający mobilną navigację"
+            class="nav__menu-img"
+          />
+        </button>
+        <a
+          routerLinkActive="nav__link-active"
+          class="nav__link"
+          (click)="hideNavLinks()"
+          [routerLink]="['/o-nas']"
+          >O nas</a
+        >
+        <a
+          routerLinkActive="nav__link-active"
+          class="nav__link"
+          routerLink="/materialy"
+          (click)="hideNavLinks()"
+        >
+          Materiały
+        </a>
+        <a
+          routerLinkActive="nav__link-active"
+          class="nav__link"
+          routerLink="/social-media"
+          (click)="hideNavLinks()"
+        >
+          Social Media</a
+        >
+        <!-- <a
+          routerLinkActive="nav__link-active"
+          class="nav__link"
+          routerLink="/wesprzyj-nas"
+          (click)="hideNavLinks()"
+          >Wesprzyj nas</a
+        > -->
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,102 @@
+.nav {
+  position: fixed;
+  height: 10rem;
+  width: 100%;
+  background-color: #131523;
+  z-index: 20;
+  &__menu {
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    height: 4rem;
+    width: 4rem;
+    background: none;
+    border: none;
+
+    cursor: pointer;
+    z-index: 22;
+
+    &-close {
+      position: absolute;
+      top: 3rem;
+      right: 3rem;
+      height: 4rem;
+      width: 4rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 22;
+    }
+    &-left {
+      position: absolute;
+      top: 3rem;
+      left: 3rem;
+      height: 4rem;
+      width: 4rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 22;
+    }
+    &-img {
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  &__links {
+    &-box {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: -101%;
+      right: -101%;
+      background-color: #131523;
+      transition: right 0.4s, top 0.4s;
+      z-index: 23;
+    }
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__link {
+    padding: 1.5rem 3rem;
+    font-size: 2em;
+    color: #ddd;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    &:hover {
+      color: #dbaf40;
+    }
+    &-active {
+      color: #dbaf40;
+    }
+  }
+}
+.wrapper {
+  position: relative;
+  height: 100%;
+}
+.active {
+  display: flex;
+}
+.active-btn {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.opacity {
+  opacity: 1;
+}
+.slide {
+  right: 0;
+  top: 0;
+}

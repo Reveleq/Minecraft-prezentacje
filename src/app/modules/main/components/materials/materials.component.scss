@@ -1,0 +1,123 @@
+.materials {
+  background-color: #fff;
+  padding-bottom: 5em;
+  &__title {
+    padding: 5em 0 2em;
+    position: relative;
+    font-size: 3.5rem;
+    color: #131523;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__card {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: transform 0.3s;
+    z-index: 5;
+    background-color: #131523;
+    &:hover {
+      transform: scale(1.01);
+    }
+    &-btn {
+      margin-top: 2em;
+      padding: 0.7em 2.5em;
+      font-family: "Pixelify Sans", sans-serif;
+      background-color: #fff;
+      color: #131523;
+      font-size: 1.6rem;
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+      transition: background-color 0.3s, color 0.3s;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        background-color: #dbaf40;
+        color: #131523;
+      }
+    }
+    &-img {
+      position: relative;
+      height: 20rem;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 5;
+      &-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        z-index: 5;
+        &-title {
+          text-align: center;
+          font-size: 3rem;
+          font-weight: 400;
+          color: #fff;
+          z-index: 10;
+        }
+      }
+    }
+    &-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 20rem;
+      &-paragraph {
+        font-size: 1.6rem;
+        margin: 2em;
+        max-width: 35rem;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .materials {
+    &__card {
+      flex-direction: row;
+      max-width: 55rem;
+      &:nth-child(2n) {
+        flex-direction: row-reverse;
+      }
+      &-img {
+        width: 50%;
+      }
+      &-text {
+        width: 50%;
+        &-paragraph {
+          font-size: 1.8rem;
+          max-width: 45rem;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .materials {
+    padding-bottom: 10em;
+    &__title {
+      font-size: 4.5rem;
+    }
+  }
+}

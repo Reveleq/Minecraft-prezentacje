@@ -1,0 +1,44 @@
+.scroll-up {
+  position: fixed;
+  right: 3em;
+  bottom: 3em;
+  transition: right 0.3s;
+  z-index: 6;
+  cursor: pointer;
+  &__btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    width: 6rem;
+    height: 6rem;
+    background-color: #dbaf40;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: background-color 0.3s;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 6;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+    z-index: 6;
+  }
+}
+.wrapper {
+  position: relative;
+  height: 100%;
+}
+.wrapper-fixed{
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  
+}

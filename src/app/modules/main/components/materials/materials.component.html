@@ -1,0 +1,26 @@
+<section class="materials">
+  <div class="container">
+    <h3 class="materials__title">Materiały</h3>
+    <div class="materials__box">
+      <div class="materials__card" *ngFor="let card of materials">
+        <div
+          class="materials__card-img"
+          style="background-image: url('assets/img/material.png')"
+        >
+          <div class="materials__card-bg"></div>
+        </div>
+        <div class="materials__card-text">
+          <h4 class="materials__card-img-text-title">
+            {{ card.title }}
+          </h4>
+          <button
+            class="materials__card-btn"
+            routerLink="/materialy/{{ card.id }}"
+          >
+            Czytaj wiecej
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

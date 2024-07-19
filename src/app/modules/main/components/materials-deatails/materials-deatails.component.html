@@ -1,0 +1,67 @@
+<header class="header-hero">
+  <div
+    class="header-hero__img"
+    style="background-image: url('assets/img/header.jpg')"
+  >
+    <div class="header-hero__bg"></div>
+    <div class="header-hero__text">
+      <h1 class="header-hero__text-header">Minecraft-Prezentacje</h1>
+
+      <button class="header-hero__text-button" [routerLink]="['/kontakt']">
+        Kontakt
+      </button>
+    </div>
+  </div>
+</header>
+<div class="materials-details">
+  <div class="materials-details__bg">
+    <div class="wrapper">
+      <div class="materials-details__box">
+        <h3 class="materials-details__box-title header">
+          {{ material.title }}
+        </h3>
+
+        <img
+          class="materials-details__box-img"
+          src="{{ material.imgisrc }}"
+          alt="miniaturka z filmu"
+        />
+
+        <p class="materials-details__box-text">{{ material.text }}</p>
+        <a
+          class="materials-details__download"
+          href="{{ material.materialsrc }}"
+          *ngIf="material.materialsrc"
+        >
+          <img
+            class="materials-details__download-img"
+            src="assets/img/icons/download.svg"
+            alt="ikonka pobierania"
+          />
+        </a>
+        <a
+          class="materials-details__box-btn"
+          href="{{ material.ytsrc }}"
+          target="_blank"
+        >
+          Link to filmu
+        </a>
+        <a
+          class="materials-details__box-btn"
+          href="{{ material.mysterysrc }}"
+          target="_blank"
+          *ngIf="material.mysterysrc"
+        >
+          Backstage odcinka
+        </a>
+        <button class="materials-details__close" (click)="back()">
+          <img
+            class="materials-details__close-img"
+            src="assets/img/icons/x-black.svg"
+            alt="ikonka x"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

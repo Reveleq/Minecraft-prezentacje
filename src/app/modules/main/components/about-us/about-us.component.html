@@ -1,0 +1,90 @@
+<section class="about-us-first">
+  <div class="wrapper">
+    <h3 class="about-us-first__title">kim jesteśmy</h3>
+    <div class="about-us-first__box">
+      <div class="about-us-first__card">
+        <h4 class="about-us-first__card-title">Nietypowy team</h4>
+        <p class="about-us-first__card-text extra-margin">
+          Pomysł pojawił się dzięki (myślę, że można tak powiedzieć) naszym
+          nauczycielom, którzy pozwolili nam na zrobienie prezentacji na lekcje
+          w formie wideo. Pierwszą właśnie tego typu prezentacją, naszym
+          debiutem, było streszczenie, interpretacja, opowieść “Mitu o Dedalu i
+          Ikarze” na podstawie książki Jana Parandowskiego, co także było naszym
+          pierwszym (pomijając film promocyjny) filmem na YouTube.
+        </p>
+      </div>
+      <div class="about-us-first__card">
+        <img
+          class="about-us-first__card-img"
+          src="assets/img/about-us.webp"
+          alt="świat w minecraft"
+        />
+        <p class="about-us-first__card-text">
+          Pomyśleliśmy także, że tematy typowo humanistyczne mogą być dobrą
+          odskocznią od naszych profili. No i pewnego dnia w szkole, w końcu
+          zdecydowaliśmy się na założenie kanału (no wiecie taki spontan mega),
+          zebraliśmy parę osób nawet spoza naszego oddziału ( w sensie szkoły
+          XD), i skleiliśmy taką fajną ekipę.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about-us-second">
+  <div class="wrapper">
+    <div class="about-us-second__box">
+      <div class="about-us-second__card-main">
+        <h3 class="about-us-second__title">Ekipa do zadań specjalnych</h3>
+        <div class="about-us-second__card-img-main-box">
+          <img
+            class="about-us-second__card-img-main"
+            src="assets/img/krzychu.webp"
+            alt="osoba uczęstnicząca w tworzeniu projektu"
+          />
+          <p class="about-us-second__card-img-main-title">Krzychu</p>
+          <p class="about-us-second__card-img-main-text">
+            Pomysłodawca, aktor, montażysta, założyciel Tik Toka, YT i IG.
+          </p>
+        </div>
+      </div>
+      <!-- <button class="about-us__button" (click)="showAll = !showAll">
+        Pokaz wszystko
+      </button> -->
+      <div class="about-us-second__card">
+        <h3 class="about-us-second__card-title">Reszta ekipy</h3>
+        <button
+          class="about-us-second__card-img-box"
+          *ngFor="let card of teamData"
+          routerLink="/o-nas/{{ card.id }}"
+        >
+          <img
+            class="about-us-second__card-img"
+            src="{{ card.src }}"
+            alt="osoba uczęstnicząca w tworzeniu projektu"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about-us-third">
+  <h3 class="about-us-third__title">Nasze cele</h3>
+  <div class="wrapper">
+    <div class="about-us-third__box">
+      <img
+        class="about-us-third__img"
+        src="assets/img/2024.jpg"
+        alt="budynek w minecraft"
+      />
+      <div class="about-us-third__text">
+        <p class="about-us-third__text-p">
+          Z pewnością do naszych celów można zaliczyć:<br />
+          -poszerzenie wiedzy<br />
+          -wzbudzenie zainteresowania historią <br />
+          -pomoc (może się przyda do sprawdzianu lub kartkówki) <br />
+          -rozchmurzenie całego spojrzenia na naukę -Dobra Zabawa!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
